@@ -49,3 +49,6 @@
 [submodule "sites/all/modules/entity"]
 	path = sites/all/modules/entity
 	url = git://git.drupal.org/project/entity.git
+[submodule "sites/all/modules/panelizer"]
+	path = sites/all/modules/panelizer
+	url = git://git.drupal.org/project/panelizer.git
