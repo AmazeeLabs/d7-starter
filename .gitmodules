@@ -7,3 +7,45 @@
 [submodule "sites/all/modules/git_deploy"]
 	path = sites/all/modules/git_deploy
 	url = git://git.drupal.org/project/git_deploy.git
+[submodule "sites/all/modules/pathauto"]
+	path = sites/all/modules/pathauto
+	url = git://git.drupal.org/project/pathauto.git
+[submodule "sites/all/modules/transliteration"]
+	path = sites/all/modules/transliteration
+	url = git://git.drupal.org/project/transliteration.git
+[submodule "sites/all/modules/token"]
+	path = sites/all/modules/token
+	url = git://git.drupal.org/project/token.git
+[submodule "sites/all/modules/views"]
+	path = sites/all/modules/views
+	url = git://git.drupal.org/project/views.git
+[submodule "sites/all/modules/ctools"]
+	path = sites/all/modules/ctools
+	url = git://git.drupal.org/project/ctools.git
+[submodule "sites/all/modules/jquery_update"]
+	path = sites/all/modules/jquery_update
+	url = git://git.drupal.org/project/jquery_update.git
+[submodule "sites/all/modules/panels"]
+	path = sites/all/modules/panels
+	url = git://git.drupal.org/project/panels.git
+[submodule "sites/all/modules/views_bulk_operations"]
+	path = sites/all/modules/views_bulk_operations
+	url = git://git.drupal.org/project/views_bulk_operations.git
+[submodule "sites/all/modules/globalredirect"]
+	path = sites/all/modules/globalredirect
+	url = git://git.drupal.org/project/globalredirect.git
+[submodule "sites/all/modules/better_exposed_filters"]
+	path = sites/all/modules/better_exposed_filters
+	url = git://git.drupal.org/project/better_exposed_filters.git
+[submodule "sites/all/themes/shiny"]
+	path = sites/all/themes/shiny
+	url = git://git.drupal.org/project/shiny.git
+[submodule "sites/all/modules/login_destination"]
+	path = sites/all/modules/login_destination
+	url = git://git.drupal.org/project/login_destination.git
+[submodule "sites/all/modules/admin_views"]
+	path = sites/all/modules/admin_views
+	url = git://git.drupal.org/project/admin_views.git
+[submodule "sites/all/modules/entity"]
+	path = sites/all/modules/entity
+	url = git://git.drupal.org/project/entity.git
