@@ -6,4 +6,4 @@
 	url = git://git.drupal.org/project/admin_menu.git
 [submodule "sites/all/modules/git_deploy"]
 	path = sites/all/modules/git_deploy
-	url = git@github.com:AmazeeLabs/git_deploy.git
+	url = git://git.drupal.org/project/git_deploy.git
