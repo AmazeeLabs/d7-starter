@@ -10,6 +10,11 @@
  * Be careful with variables: the current scope is global.
  */
 
+if (php_sapi_name() != 'cli') {
+  @ob_end_clean();
+  exit;
+}
+
 if (in_array('--help', $_SERVER['argv']) || in_array('-h', $_SERVER['argv']) || in_array('help', $_SERVER['argv'])) {
   echo <<<EOF
 
