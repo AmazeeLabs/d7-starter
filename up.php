@@ -20,6 +20,17 @@ if (in_array('--help', $_SERVER['argv']) || in_array('-h', $_SERVER['argv']) || 
 
 Updates current database and other stuff from DEV or LIVE.
 
+By default (with no options passed) it does:
+- exports/imports session table, so the sessions persist
+- updates/initializes git submodules
+- synchronizes database from DEV
+- grants 'access devel information' permission to all roles
+- sets readonly mode for all search_api indexes
+- corrects domain variants to local basing on \$base_url in settings.php
+- enables devel module
+- disables all possible caches
+- clears all caches
+
 Usage:        ./up.php [OPTIONS]
 Example:      ./up.php -b -f # Update including files and make DB backups.
 
@@ -81,8 +92,10 @@ if ($sync_files) {
 
 if (!$ignore_submodules) {
   color_echo('Updating git submodules...');
+  chdir(exec('git rev-parse --show-toplevel'));
   exec('git submodule sync');
   exec('git submodule update --init');
+  chdir(DRUPAL_ROOT);
 }
 
 if (!$no_db_sync) {
