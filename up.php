@@ -146,11 +146,12 @@ catch (Exception $s) {}
 color_echo('Ensuring devel is enabled...');
 exec('drush en devel -y');
 
-color_echo('Disabling caches...');
+color_echo('Disabling all possible caches...');
 variable_set('cache', 0);
 variable_set('block_cache', 0);
 variable_set('preprocess_css', 0);
 variable_set('preprocess_js', 0);
+exec('drush dis varnish -y');
 
 if ($disable_email_reroute) {
   color_echo('Disabling emails reroute...');
