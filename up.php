@@ -118,14 +118,13 @@ try {
       ->execute();
 }
 catch (Exception $s) {}
-try {
+if (function_exists('apachesolr_load_all_environments') && function_exists('apachesolr_environment_save')) {
   // The case if the apachesolr module is used.
   foreach (apachesolr_load_all_environments() as $env) {
     $env["conf"]["apachesolr_read_only"] = APACHESOLR_READ_ONLY;
     apachesolr_environment_save($env);
   }
 }
-catch (Exception $s) {}
 
 color_echo('Correcting domains and domain variants...');
 try {
