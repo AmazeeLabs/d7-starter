@@ -11,4 +11,4 @@ TBD
 
 ## Changelog
 
-TBD
+2014-06-20 Updated Drupal core and some outdated modules.
