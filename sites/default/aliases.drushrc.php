@@ -1,6 +1,6 @@
 <?php
 
-$sitename = 'new-site_com';
+$sitename = 'CHANGEME';
 
 // - DO NOT make changes below this Comment
 
