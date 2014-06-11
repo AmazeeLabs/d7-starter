@@ -52,3 +52,12 @@
 [submodule "sites/all/modules/panelizer"]
 	path = sites/all/modules/panelizer
 	url = git://git.drupal.org/project/panelizer.git
+[submodule "sites/all/modules/varnish"]
+	path = sites/all/modules/varnish
+	url = git://git.drupal.org/project/varnish.git
+[submodule "sites/all/modules/redis"]
+	path = sites/all/modules/redis
+	url = git://git.drupal.org/project/redis.git
+[submodule "sites/all/libraries/predis"]
+	path = sites/all/libraries/predis
+	url = git@github.com:nrk/predis.git
