@@ -72,4 +72,4 @@
 	url = git://git.drupal.org/project/fpa.git
 [submodule "sites/all/modules/userone"]
 	path = sites/all/modules/userone
-	url = git://git.drupal.org/project/userone.git
+	url = git@github.com:AmazeeLabs/userone.git
