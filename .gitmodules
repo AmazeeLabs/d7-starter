@@ -64,3 +64,6 @@
 [submodule "sites/all/modules/metatag"]
 	path = sites/all/modules/metatag
 	url = git://git.drupal.org/project/metatag.git
+[submodule "sites/all/modules/pathologic"]
+	path = sites/all/modules/pathologic
+	url = git://git.drupal.org/project/pathologic.git
