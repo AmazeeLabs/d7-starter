@@ -61,3 +61,6 @@
 [submodule "sites/all/libraries/predis"]
 	path = sites/all/libraries/predis
 	url = git@github.com:nrk/predis.git
+[submodule "sites/all/modules/metatag"]
+	path = sites/all/modules/metatag
+	url = git://git.drupal.org/project/metatag.git
