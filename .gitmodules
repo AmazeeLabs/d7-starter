@@ -67,3 +67,6 @@
 [submodule "sites/all/modules/pathologic"]
 	path = sites/all/modules/pathologic
 	url = git://git.drupal.org/project/pathologic.git
+[submodule "sites/all/modules/fpa"]
+	path = sites/all/modules/fpa
+	url = git://git.drupal.org/project/fpa.git
