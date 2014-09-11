@@ -76,3 +76,6 @@
 [submodule "sites/all/modules/change_pwd_page"]
 	path = sites/all/modules/change_pwd_page
 	url = git://git.drupal.org/project/change_pwd_page.git
+[submodule "sites/all/modules/panels_everywhere"]
+	path = sites/all/modules/panels_everywhere
+	url = git://git.drupal.org/project/panels_everywhere.git
