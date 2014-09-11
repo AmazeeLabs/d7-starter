@@ -79,3 +79,6 @@
 [submodule "sites/all/modules/panels_everywhere"]
 	path = sites/all/modules/panels_everywhere
 	url = git://git.drupal.org/project/panels_everywhere.git
+[submodule "sites/all/themes/omega"]
+	path = sites/all/themes/omega
+	url = git://git.drupal.org/project/omega.git
