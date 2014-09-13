@@ -82,3 +82,6 @@
 [submodule "sites/all/themes/omega"]
 	path = sites/all/themes/omega
 	url = git://git.drupal.org/project/omega.git
+[submodule "sites/all/modules/title"]
+	path = sites/all/modules/title
+	url = git://git.drupal.org/project/title.git
