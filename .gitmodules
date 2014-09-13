@@ -85,3 +85,9 @@
 [submodule "sites/all/modules/title"]
 	path = sites/all/modules/title
 	url = git://git.drupal.org/project/title.git
+[submodule "sites/all/modules/pathauto_persist"]
+	path = sites/all/modules/pathauto_persist
+	url = git://git.drupal.org/project/pathauto_persist.git
+[submodule "sites/all/modules/redirect"]
+	path = sites/all/modules/redirect
+	url = git://git.drupal.org/project/redirect.git
