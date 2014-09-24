@@ -91,3 +91,6 @@
 [submodule "sites/all/modules/redirect"]
 	path = sites/all/modules/redirect
 	url = git://git.drupal.org/project/redirect.git
+[submodule "sites/all/modules/prevent_js_alerts"]
+	path = sites/all/modules/prevent_js_alerts
+	url = git://git.drupal.org/project/prevent_js_alerts.git
