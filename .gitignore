@@ -7,3 +7,5 @@ sites/*/private
 
 # Custom.
 .idea
+!sites/default/settings.php
+.vagrant
