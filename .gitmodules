@@ -97,3 +97,9 @@
 [submodule "vagrant"]
 	path = vagrant
 	url = git@github.com:AmazeeLabs/vagrant.git
+[submodule "sites/all/modules/media"]
+	path = sites/all/modules/media
+	url = git@github.com:AmazeeLabs/media.git
+[submodule "sites/all/modules/ckeditor"]
+	path = sites/all/modules/ckeditor
+	url = git@github.com:AmazeeLabs/ckeditor.git
