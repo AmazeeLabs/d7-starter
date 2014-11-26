@@ -103,3 +103,12 @@
 [submodule "sites/all/modules/ckeditor"]
 	path = sites/all/modules/ckeditor
 	url = git@github.com:AmazeeLabs/ckeditor.git
+[submodule "sites/all/modules/webform"]
+	path = sites/all/modules/webform
+	url = git://git.drupal.org/project/webform.git
+[submodule "sites/all/modules/webform_localization"]
+	path = sites/all/modules/webform_localization
+	url = git://git.drupal.org/project/webform_localization.git
+[submodule "sites/all/modules/better_formats"]
+	path = sites/all/modules/better_formats
+	url = git://git.drupal.org/project/better_formats.git
