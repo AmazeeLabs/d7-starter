@@ -112,3 +112,6 @@
 [submodule "sites/all/modules/better_formats"]
 	path = sites/all/modules/better_formats
 	url = git://git.drupal.org/project/better_formats.git
+[submodule "sites/all/modules/chosen"]
+	path = sites/all/modules/chosen
+	url = http://git.drupal.org/project/chosen.git
