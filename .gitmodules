@@ -118,3 +118,6 @@
 [submodule "sites/all/modules/field_reference_delete"]
 	path = sites/all/modules/field_reference_delete
 	url = http://git.drupal.org/sandbox/drothstein/1775816.git
+[submodule "sites/all/modules/ife"]
+	path = sites/all/modules/ife
+	url = git@github.com:AmazeeLabs/ife.git
