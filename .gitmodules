@@ -115,3 +115,6 @@
 [submodule "sites/all/modules/chosen"]
 	path = sites/all/modules/chosen
 	url = http://git.drupal.org/project/chosen.git
+[submodule "sites/all/modules/field_reference_delete"]
+	path = sites/all/modules/field_reference_delete
+	url = http://git.drupal.org/sandbox/drothstein/1775816.git
