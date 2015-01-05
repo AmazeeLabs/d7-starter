@@ -121,3 +121,6 @@
 [submodule "sites/all/modules/ife"]
 	path = sites/all/modules/ife
 	url = git@github.com:AmazeeLabs/ife.git
+[submodule "sites/all/modules/i18n"]
+	path = sites/all/modules/i18n
+	url = git://git.drupal.org/project/i18n.git
