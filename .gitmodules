@@ -127,3 +127,6 @@
 [submodule "sites/all/modules/variable"]
 	path = sites/all/modules/variable
 	url = git://git.drupal.org/project/variable.git
+[submodule "sites/all/modules/view_unpublished"]
+	path = sites/all/modules/view_unpublished
+	url = git://git.drupal.org/project/view_unpublished.git
