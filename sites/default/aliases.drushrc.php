@@ -1,8 +1,8 @@
 <?php
 
-$sitename = 'CHANGEME';   //use the username on our servers like testsite_ch
-$options['newrelic-api-key'] = 'CHANGEME';
-$options['deploy-repository'] = 'git@github.com:AmazeeLabs/CHANGEME.git';
+$sitename = 'new-site_com';   //use the username on our servers like testsite_ch
+$options['newrelic-api-key'] = 'new-site_com';
+$options['deploy-repository'] = 'git@github.com:AmazeeLabs/new-site_com.git';
 
 // - And we load the aliases file here
 global $aliases_stub;
