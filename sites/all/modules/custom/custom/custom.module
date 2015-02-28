@@ -1,2 +1,24 @@
 <?php
 
+/**
+ * Implements hook_field_attach_form().
+ */
+function custom_field_attach_form($entity_type, $entity, &$form, &$form_state, $langcode) {
+
+  // This is workaround for a core bug: if a file/image/options field has
+  // the #required property set to TRUE, it is validated even if field's #access
+  // is FALSE.
+  /* @see file_managed_file_validate() */
+  /* @see options_field_widget_validate() */
+  // The bug can happen only if the field_permissions module is enabled. There
+  // is an issue on the d.o: https://www.drupal.org/node/2203077#comment-9488841
+  // The bug was initially discovered in VNT-244.
+  if (module_exists('field_permissions')) {
+    module_load_include('inc', 'custom');
+    foreach (element_children($form) as $key) {
+      if (isset($form[$key]['#access']) && !$form[$key]['#access']) {
+        _custom_make_elements_non_required($form[$key]);
+      }
+    }
+  }
+}
