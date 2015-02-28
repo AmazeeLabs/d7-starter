@@ -2,3 +2,5 @@ name = Custom
 description = Custom stuff.
 core = 7.x
 package = Custom
+
+scripts[] = js/avoid_preselect_in_go_back.js
