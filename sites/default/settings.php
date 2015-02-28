@@ -552,6 +552,9 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  */
 # $conf['allow_authorize_operations'] = FALSE;
 
+// Let the ultimate_cron work as usual on the core-cron command ("drush cron").
+$conf['ultimate_cron_check_schedule_on_core_cron'] = TRUE;
+
 $local_settings_filename = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'settings.local.php';
 if (file_exists($local_settings_filename)) {
     require_once $local_settings_filename;
