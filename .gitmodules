@@ -133,3 +133,6 @@
 [submodule "sites/all/modules/reroute_email"]
 	path = sites/all/modules/reroute_email
 	url = git://git.drupal.org/project/reroute_email.git
+[submodule "sites/all/modules/entity_translation"]
+	path = sites/all/modules/entity_translation
+	url = git://git.drupal.org/project/entity_translation.git
