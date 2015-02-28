@@ -130,3 +130,6 @@
 [submodule "sites/all/modules/view_unpublished"]
 	path = sites/all/modules/view_unpublished
 	url = git://git.drupal.org/project/view_unpublished.git
+[submodule "sites/all/modules/reroute_email"]
+	path = sites/all/modules/reroute_email
+	url = git://git.drupal.org/project/reroute_email.git
