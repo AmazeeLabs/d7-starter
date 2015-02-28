@@ -136,3 +136,6 @@
 [submodule "sites/all/modules/entity_translation"]
 	path = sites/all/modules/entity_translation
 	url = git://git.drupal.org/project/entity_translation.git
+[submodule "sites/all/modules/ultimate_cron"]
+	path = sites/all/modules/ultimate_cron
+	url = git://git.drupal.org/project/ultimate_cron.git
