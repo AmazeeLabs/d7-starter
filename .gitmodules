@@ -139,3 +139,6 @@
 [submodule "sites/all/modules/ultimate_cron"]
 	path = sites/all/modules/ultimate_cron
 	url = git://git.drupal.org/project/ultimate_cron.git
+[submodule "sites/all/modules/image_link_formatter"]
+	path = sites/all/modules/image_link_formatter
+	url = git://git.drupal.org/project/image_link_formatter.git
