@@ -142,3 +142,6 @@
 [submodule "sites/all/modules/image_link_formatter"]
 	path = sites/all/modules/image_link_formatter
 	url = git://git.drupal.org/project/image_link_formatter.git
+[submodule "sites/all/modules/link"]
+	path = sites/all/modules/link
+	url = git://git.drupal.org/project/link.git
