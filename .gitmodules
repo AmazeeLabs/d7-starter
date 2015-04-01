@@ -145,3 +145,6 @@
 [submodule "sites/all/modules/link"]
 	path = sites/all/modules/link
 	url = git://git.drupal.org/project/link.git
+[submodule "sites/all/modules/role_delegation"]
+	path = sites/all/modules/role_delegation
+	url = git://git.drupal.org/project/role_delegation.git
