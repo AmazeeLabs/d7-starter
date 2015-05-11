@@ -148,3 +148,6 @@
 [submodule "sites/all/modules/role_delegation"]
 	path = sites/all/modules/role_delegation
 	url = git://git.drupal.org/project/role_delegation.git
+[submodule "sites/all/modules/superfish"]
+	path = sites/all/modules/superfish
+	url = git@github.com:AmazeeLabs/superfish.git
