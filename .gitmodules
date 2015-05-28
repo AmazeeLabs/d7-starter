@@ -151,3 +151,6 @@
 [submodule "sites/all/modules/superfish"]
 	path = sites/all/modules/superfish
 	url = git@github.com:AmazeeLabs/superfish.git
+[submodule "sites/all/modules/styleguide"]
+	path = sites/all/modules/styleguide
+	url = git://git.drupal.org/project/styleguide.git
