@@ -154,3 +154,6 @@
 [submodule "sites/all/modules/styleguide"]
 	path = sites/all/modules/styleguide
 	url = git://git.drupal.org/project/styleguide.git
+[submodule "sites/all/modules/menu_attributes"]
+	path = sites/all/modules/menu_attributes
+	url = git://git.drupal.org/project/menu_attributes.git
