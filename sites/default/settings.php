@@ -559,3 +559,14 @@ $local_settings_filename = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'settings.l
 if (file_exists($local_settings_filename)) {
     require_once $local_settings_filename;
 }
+
+// To improve the performance, we use READ-COMMITTED isolation by default. To
+// not do it, add
+// $conf['custom_disallow_read_committed_isolation'] = TRUE;
+// in the settings.local.php.
+// See https://www.drupal.org/node/1650930 for more info.
+if ($databases['default']['default']['driver'] == 'mysql' && empty($conf['custom_disallow_read_committed_isolation'])) {
+  $databases['default']['default']['init_commands']['isolation'] = 'SET SESSION tx_isolation="READ-COMMITTED"';
+}
+// We don't need this setting anymore.
+unset($conf['custom_disallow_read_committed_isolation']);
