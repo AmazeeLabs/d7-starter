@@ -17,17 +17,13 @@
  * 
  */
 
-### AMAZEE.IO Reverse proxy settings
-if (getenv('AMAZEEIO_VARNISH_HOSTS')) {
-  $conf['reverse_proxy'] = TRUE;
-  $conf['reverse_proxy_addresses'] = explode(getenv('AMAZEEIO_VARNISH_HOSTS'), ',');
-}
-
-### AMAZEE.IO Varnish settings
+### AMAZEE.IO Varnish & Reverse proxy settings
 if (getenv('AMAZEEIO_VARNISH_HOSTS') && getenv('AMAZEEIO_VARNISH_SECRET')) {
   $varnish_hosts = explode(getenv('AMAZEEIO_VARNISH_HOSTS'), ',');
   array_walk($varnish_hosts, function(&$value, $key) { $value .= ':6082'; });
   
+  $conf['reverse_proxy'] = TRUE;
+  $conf['reverse_proxy_addresses'] = explode(getenv('AMAZEEIO_VARNISH_HOSTS'), ',');
   $conf['varnish_control_terminal'] = implode($varnish_hosts, " ");
   $conf['varnish_control_key'] = getenv('AMAZEEIO_VARNISH_SECRET');
   $conf['varnish_version'] = 3;
