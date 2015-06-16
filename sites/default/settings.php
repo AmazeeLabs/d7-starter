@@ -2,7 +2,7 @@
 
 /**
  * @file
- * AmazeeIO Drupal 7 site-specific configuration file.
+ * AmazeeIO Drupal 7 configuration file.
  * 
  * You should not edit this file, please use environment specific files!
  * They are loaded in this order:
