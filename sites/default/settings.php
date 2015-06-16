@@ -48,7 +48,7 @@ if(getenv('AMAZEEIO_SITENAME')){
     'username' => getenv('AMAZEEIO_DB_USERNAME'),
     'password' => getenv('AMAZEEIO_DB_PASSWORD'),
     'host' => getenv('AMAZEEIO_DB_HOST'),
-    'port' => 
+    'port' => getenv('AMAZEEIO_DB_PORT'),
     'prefix' => '',
   );
 }
