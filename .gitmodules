@@ -166,6 +166,3 @@
 [submodule "sites/all/modules/entity_view_mode"]
 	path = sites/all/modules/entity_view_mode
 	url = git.drupal.org/project/entity_view_mode.git
-	
-	
-	
