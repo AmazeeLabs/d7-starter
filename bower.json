@@ -1,0 +1,8 @@
+{
+  "name": "standard",
+  "version": "1.0.0",
+  "devDependencies": {
+    "susy": ">=2.2.5",
+    "breakpoint-sass": ">=2.6.1"
+  }
+}
