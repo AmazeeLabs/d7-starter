@@ -160,3 +160,6 @@
 [submodule "sites/all/modules/link_css"]
 	path = sites/all/modules/link_css
 	url = git://git.drupal.org/project/link_css.git
+[submodule "sites/all/modules/role_export"]
+	path = sites/all/modules/role_export
+	url = git://git.drupal.org/project/role_export.git
