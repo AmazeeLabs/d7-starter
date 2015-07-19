@@ -1,7 +1,7 @@
 
 This is a draft for new sites with base stuff pre-configured.
 
-The site lives at `amazeedev1.nine.ch` server in the `~/new-site.com` directory. It is available at http://new-site.com.amazeedev1.nine.ch
+The site lives at `dev1.compact` server. It is available at http://new-site.com.dev.dev1.compact.amazee.io/
 
 Database credentials:
 - user: new-site.com
