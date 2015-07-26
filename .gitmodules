@@ -169,3 +169,6 @@
 [submodule "sites/all/modules/entity_view_mode"]
 	path = sites/all/modules/entity_view_mode
 	url = git://git.drupal.org/project/entity_view_mode.git
+[submodule "sites/all/modules/search_api_override"]
+	path = sites/all/modules/search_api_override
+	url = git://git.drupal.org/project/search_api_override.git
