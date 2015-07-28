@@ -84,7 +84,7 @@
 	url = git://git.drupal.org/project/omega.git
 [submodule "sites/all/modules/title"]
 	path = sites/all/modules/title
-	url = git://git.drupal.org/project/title.git
+	url = git@github.com:AmazeeLabs/title.git
 [submodule "sites/all/modules/pathauto_persist"]
 	path = sites/all/modules/pathauto_persist
 	url = git://git.drupal.org/project/pathauto_persist.git
