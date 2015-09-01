@@ -1,0 +1,175 @@
+
+// NAVIGATION STYLES
+// =============================================================================
+
+@include breakpoint($desktop-up) {
+  .sf-menu.menu {
+    float: right;
+    display: block;
+    list-style: none;
+    margin: 5px 0 0 0;
+
+    li {
+      display: inline-block;
+      margin: 0 6px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &.active-trail {
+        a {
+          color: $red;
+          border-color: lighten($red,10);
+        }
+      }
+
+      a {
+        color: $black;
+        padding: 10px 0 5px;
+        border-bottom: 1px solid transparent;
+        @include transition(all 0.3s ease);
+
+        &:hover {
+          border-bottom: 1px solid;
+        }
+
+        &.user-login-menu {
+          position: relative;
+          top: 2px;
+          @include button;
+          text-transform: uppercase;
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint($almost-wide) {
+  .sf-menu.menu {
+    li {
+      margin: 0 11px;
+    }
+  }
+}
+
+@include breakpoint($wide) {
+  .sf-menu.menu {
+    li {
+      margin: 0 13px;
+    }
+  }
+}
+
+// HAMBURGER ICON
+// =============================================================================
+
+.sf-accordion-toggle {
+  position: absolute;
+  right: 15px;
+  top: 23px;
+
+  a {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    float: right;
+    width: 36px;
+    height: 26px;
+    padding: 26px;
+    margin: -24px -10px 0 0;
+    @include transition(all 0.25s ease);
+
+    span, span:before, span:after {
+      content: '';
+      position: absolute;
+      display: block;
+      cursor: pointer;
+      height: 3px;
+      width: 24px;
+      background: $black;
+      @include transition(all 0.1s ease-in-out);
+    }
+
+    span {
+      text-indent: -9999px;
+      top: 31px;
+      right: 15px;
+
+      &:before {
+        top: -7px;
+      }
+
+      &:after {
+        top: 7px;
+      }
+    }
+
+    &:hover {
+      span {
+        &:before {
+          top: -8px;
+        }
+
+        &:after {
+          top: 8px;
+        }
+      }
+    }
+
+    &.sf-expanded {
+      span {
+        background-color: transparent;
+
+        &:before, &:after {
+          top: 0px;
+        }
+
+        &:before {
+          @include rotate(-45deg);
+        }
+
+        &:after {
+          @include rotate(45deg);
+        }
+      }
+    }
+  }
+}
+
+// MOBILE NAVIGATION
+// =============================================================================
+
+@include breakpoint($tablet) {
+  .sf-menu.menu {
+    display: none !important;
+  }
+
+  .sf-menu.sf-expanded {
+    display: block !important;
+    list-style: none;
+    position: absolute;
+    top: 66px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background: $red;
+
+    li {
+      float: none;
+      display: block;
+
+      &.active-trail {
+        background-color: $black;
+      }
+
+      a {
+        display: block;
+        width: 100%;
+        color: $white;
+        padding: 10px 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+main ul:not(.links--inline):not(.menu):not(.contextual-links):not(.slides):not(.tabs)
+  {
+  list-style: none;
+  margin-bottom: 20px;
+
+  li {
+    &:before {
+      content: "\2022";
+      display: block;
+      position: relative;
+      left: -12px;
+      top: 8px;
+      margin-left: -7px;
+      font-size: 150%;
+      line-height: 0;
+    }
+  }
+}
+
+main ol,
+main ul:not(.links--inline):not(.menu):not(.contextual-links):not(.slides):not(.tabs)
+{
+  li {
+    position: relative;
+    left: 20px;
+    margin-bottom: 10px;
+  }
+}

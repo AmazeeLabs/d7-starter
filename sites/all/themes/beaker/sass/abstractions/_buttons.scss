@@ -1,0 +1,21 @@
+
+// BUTTONS
+// =============================================================================
+
+@mixin button($bg-color:$black, $font-size:15px, $padding:10px 15px) {
+  background-color: $bg-color;
+  border: 0 none;
+  color: $white;
+  display: inline-block;
+  font-size: $font-size;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  @include transition(all 0.3s ease);
+  line-height: 1em;
+  padding: $padding;
+  text-transform: uppercase;
+  &:hover {
+    background-color: darken($bg-color,10);
+    color: $white;
+  }
+}

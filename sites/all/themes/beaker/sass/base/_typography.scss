@@ -1,0 +1,67 @@
+
+// BASE FONT FAMILY AND COLOR
+// =============================================================================
+body {
+  @include font-regular;
+}
+
+// HEADER STYLES
+// =============================================================================
+@mixin h1 {
+  font-size: 36px;
+}
+
+@mixin h2 {
+  font-size: 28px;
+}
+
+@mixin h3 {
+  font-size: 21px;
+}
+
+@mixin h4 {
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  //reset font weight
+  @include font-semibold;
+  line-height: 1.2em;
+}
+
+h1 {
+  @include h1;
+  margin-bottom: 0.75em;
+}
+
+h2 {
+  @include h2;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  @include h3;
+  margin-top: 1em;
+  margin-bottom: 0.75em;
+}
+
+h4 {
+  @include h4;
+  margin-top: 0.5em;
+}
+
+h1 + h2 {
+  margin-top: 0;
+}
+
+main p {
+  margin-bottom: 10px;
+}
+
+// TEXT STYLES
+// =============================================================================
+b, em, strong {
+  //font-weight: bold;
+  @include font-semibold;
+}

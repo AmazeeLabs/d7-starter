@@ -1,0 +1,9 @@
+.player {
+  @include breakpoint($mobile-only) {
+    width: 100%;
+
+    iframe {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.messages {
+  border: none;
+  padding: 14px 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  @include border-radius(0px);
+  color: $white;
+  background-repeat: no-repeat !important;
+  background-position: 20px 16px !important;
+  @include background-size(16px 16px !important);
+
+  a {
+      color: $white;
+      text-decoration: underline;
+  }
+
+  &.status, &.messages--status {
+    background: $green;
+    background-image: url(../images/icons/success.png);
+  }
+
+  &.error, &.messages--error {
+    background: $red;
+    background-image: url(../images/icons/error.png);
+  }
+
+  &.warning, &.messages--warning {
+    background: $orange;
+    background-image: url(../images/icons/warning.png);
+  }
+}

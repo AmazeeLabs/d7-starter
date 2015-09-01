@@ -1,0 +1,123 @@
+/**
+* Beaker config
+*/
+$enable-animate-css           : false;
+
+
+/**
+* Animate.css config
+*/
+
+@if ($enable-animate-css == true) {
+
+  //Config
+  $enable-prefixes              : false;
+
+  //Enable all modules
+  $enable-all-modules           : false;
+
+  //or only include some animations
+  // Fade In
+  $enable-fade-in               : true !default;
+  $enable-fade-in-up            : true !default;
+  $enable-fade-in-up-big        : true !default;
+  $enable-fade-in-down          : true !default;
+  $enable-fade-in-down-big      : true !default;
+  $enable-fade-in-left          : true !default;
+  $enable-fade-in-left-big      : true !default;
+  $enable-fade-in-right         : true !default;
+  $enable-fade-in-right-big     : true !default;
+
+
+  // Fade Out
+  $enable-fade-out              : true !default;
+  $enable-fade-out-up           : true !default;
+  $enable-fade-out-up-big       : true !default;
+  $enable-fade-out-down         : true !default;
+  $enable-fade-out-down-big     : true !default;
+  $enable-fade-out-left         : true !default;
+  $enable-fade-out-left-big     : true !default;
+  $enable-fade-out-right        : true !default;
+  $enable-fade-out-right-big    : true !default;
+
+
+  // Bounce In
+  $enable-bounce-in             : false !default;
+  $enable-bounce-in-up          : false !default;
+  $enable-bounce-in-down        : false !default;
+  $enable-bounce-in-left        : false !default;
+  $enable-bounce-in-right       : false !default;
+
+
+  // Bounce Out
+  $enable-bounce-out            : false !default;
+  $enable-bounce-out-up         : false !default;
+  $enable-bounce-out-down       : false !default;
+  $enable-bounce-out-left       : false !default;
+  $enable-bounce-out-right      : false !default;
+
+
+  // Rotate In
+  $enable-rotate-in             : false !default;
+  $enable-rotate-in-up-left     : false !default;
+  $enable-rotate-in-up-right    : false !default;
+  $enable-rotate-in-down-left   : false !default;
+  $enable-rotate-in-down-right  : false !default;
+
+
+  // Rotate Out
+  $enable-rotate-out            : false !default;
+  $enable-rotate-out-up-left    : false !default;
+  $enable-rotate-out-up-right   : false !default;
+  $enable-rotate-out-down-left  : false !default;
+  $enable-rotate-out-down-right : false !default;
+
+
+  // Flips
+  $enable-flip                  : false !default;
+  $enable-flip-in-x             : false !default;
+  $enable-flip-in-y             : false !default;
+  $enable-flip-out-x            : false !default;
+  $enable-flip-out-y            : false !default;
+
+
+  // Lightspeed
+  $enable-lightspeed-in         : false !default;
+  $enable-lightspeed-out        : false !default;
+
+
+  // Attention Seekers
+  $enable-bounce                : false !default;
+  $enable-flash                 : false !default;
+  $enable-pulse                 : false !default;
+  $enable-rubber-band           : false !default;
+  $enable-swing                 : false !default;
+  $enable-shake                 : false !default;
+  $enable-tada                  : false !default;
+  $enable-wobble                : false !default;
+
+
+  // Special
+  $enable-hinge                 : false !default;
+  $enable-roll-in               : false !default;
+  $enable-roll-out              : false !default;
+
+
+  // Zoom In
+  $enable-zoom-in               : false !default;
+  $enable-zoom-in-down          : false !default;
+  $enable-zoom-in-left          : false !default;
+  $enable-zoom-in-right         : false !default;
+  $enable-zoom-in-up            : false !default;
+
+
+  // Zoom Out
+  $enable-zoom-out              : false !default;
+  $enable-zoom-out-down         : false !default;
+  $enable-zoom-out-left         : false !default;
+  $enable-zoom-out-right        : false !default;
+  $enable-zoom-out-up           : false !default;
+
+  //Import animate css
+  @import "../libraries/animate-scss/src/_animate.scss";
+}

@@ -1,0 +1,87 @@
+name = Beaker Theme v1.0
+description = Custom Theme made by Amazee Labs
+base theme = omega
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+; ========================================
+; Stylesheets
+; ========================================
+stylesheets[all][] = css/styles.css
+stylesheets[all][] = css/animate.css
+
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/behaviors.js
+
+; ========================================
+; Regions
+; ========================================
+regions[branding] = Branding
+regions[header] = Header
+regions[navigation] = Navigation
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[footer] = Footer
+
+; ========================================
+; Plugins
+; ========================================
+plugins[panels][layouts] = layouts
+
+; ========================================
+; Settings
+; ========================================
+settings[toggle_logo] = 1
+settings[toggle_name] = 1
+settings[toggle_slogan] = 1
+settings[toggle_node_user_picture] = 1
+settings[toggle_comment_user_picture] = 1
+settings[toggle_comment_user_verification] = 1
+settings[toggle_favicon] = 1
+settings[toggle_main_menu] = 1
+settings[toggle_secondary_menu] = 1
+settings[omega_toggle_front_page_content] = 1
+settings[default_logo] = 0
+settings[logo_path] = ""
+settings[logo_upload] = ""
+settings[default_favicon] = 1
+settings[favicon_path] = ""
+settings[favicon_upload] = ""
+settings[omega_enable_warning] = 1
+settings[omega_toggle_extension_assets] = 1
+settings[omega_libraries][selectivizr][status] = 0
+settings[omega_libraries][respond][status] = 0
+settings[omega_libraries][pie][status] = 0
+settings[omega_libraries][html5shiv][status] = 0
+settings[omega_toggle_extension_layouts] = 0
+settings[omega_layout] = ""
+settings[omega_toggle_extension_development] = 0
+settings[omega_enable_export_reminder] = ""
+settings[omega_rebuild_theme_registry] = ""
+settings[omega_rebuild_aggregates] = ""
+settings[omega_browser_width_indicator] = ""
+settings[omega_livereload] = ""
+settings[omega_livereload_script] = ""
+settings[omega_livereload_host] = ""
+settings[omega_livereload_port] = ""
+settings[omega_demo_regions] = ""
+settings[omega_toggle_extension_compatibility] = 1
+settings[omega_conditional_classes_html] = 1
+settings[omega_apple_touch] = 1
+settings[omega_cleartype] = 0
+settings[omega_handheld_friendly] = 1
+settings[omega_mobile_optimized] = 0
+settings[omega_viewport] = 1
+settings[omega_viewport_user_scaleable] = 0
+settings[omega_chrome_edge] = 0
+
+; ========================================
+; Beaker Settings
+; ========================================
+settings[omega_toggle_extension_beaker] = 0

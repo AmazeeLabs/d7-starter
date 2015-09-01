@@ -1,0 +1,167 @@
+main {
+  .chosen-container {
+    @include breakpoint($mobile) {
+      width: 100% !important;
+    }
+    .chosen-single {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      height: auto;
+      // @include border-radius(3px);
+      border-radius: 0;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 21px;
+      margin-left: 0;
+      padding-left: 0;
+      white-space: nowrap;
+      @include box-sizing(border-box);
+
+      span {
+        font-weight: normal;
+        padding: 5px 10px;
+        background: $white;
+        border: 1px solid $border;
+        // @include border-radius(3px 0 0 3px);
+        &:hover {
+          border-color: $focus;
+        }
+      }
+
+      div {
+        border: none;
+        background-color: $black;
+        background-image: url(../images/icons/dropdown-arrow.png);
+        background-repeat: no-repeat;
+        background-position: 7px 6px;
+        background-size: 30px 18px;
+        width: 33px;
+        height: 33px;
+        border-top: 1px solid $border;
+        border-bottom: 1px solid $border;
+        border-right: 1px solid $border;
+        // @include border-radius(0 3px 3px 0);
+        b {
+          display: none;
+        }
+      }
+    }
+    /* hover state */
+    &:hover .chosen-single {
+      div, span {
+        border-color: $focus;
+      }
+      div {
+        background-color: $focus;
+      }
+    }
+    /* active state */
+    &.chosen-container-active .chosen-single {
+      border: 0 none;
+      box-shadow: none;
+      // @include border-radius(3px 3px 0 0);
+      div, span {
+        border-color: $focus;
+      }
+
+      div {
+        background-color: $focus;
+        background-image: url(../images/icons/dropdown-arrow.png);
+        background-repeat: no-repeat;
+        background-position: 7px 6px;
+        background-size: 30px 18px;
+      }
+
+      // span {
+      //   @include border-radius(3px 0 0 0);
+      // }
+      //
+      // div {
+      //   @include border-radius(0 3px 0 0);
+      // }
+    }
+    .chosen-drop {
+      margin-top: 0;
+      border: none;
+      border-left: 1px solid $focus;
+      border-right: 1px solid $focus;
+      border-bottom: 1px solid $focus;
+      box-shadow: none;
+      .chosen-results {
+        background-color: $grey;
+        padding: 0;
+        margin: -1px 0 0 0;
+        border-top: 1px solid $focus;
+        // @include border-radius(0 0 3px 3px);
+        li {
+          padding: 10px;
+          font-size: 15px;
+          line-height: 16px;
+          padding: 7px 6px;
+          @include transition(padding 0.25s ease);
+
+          &.result-selected, &.result-selected.highlighted {
+            background: $blue;
+            color: $white;
+          }
+          &.highlighted {
+            color: $text;
+            background: $white;
+            padding-left: 13px;
+
+            // &:last-child {
+            //   @include border-radius(0 0 3px 3px);
+            // }
+          }
+        }
+      }
+    }
+    .chosen-choices {
+      font-weight: 600;
+      padding: 3px 4px 4px;
+      background: $grey;
+      border: 2px solid $border;
+      // @include border-radius(3px);
+      &:hover {
+        border-color: #aaa;
+      }
+
+      .search-choice {
+        background: darken($grey,12);
+        border: 0 none;
+        box-shadow: none;
+      }
+    }
+    &.chosen-container-active .chosen-choices {
+      box-shadow: none;
+      border-color: $focus;
+      // @include border-radius(3px 3px 0 0);
+      .chosen-single span {
+        // @include border-radius(3px 3px 0 0);
+      }
+    }
+    &.chosen-container-multi {
+      width: 100% !important;
+    }
+
+    .chosen-search {
+      padding: 3px 8px 3px 3px;
+      input[type="text"] {
+        margin: 0;
+        border: 0 none;
+        padding: 7px 20px 7px 5px;
+        font-size: 14px;
+        background: url(../images/icons/search.png) no-repeat right center !important;
+        @include background-size(14px !important);
+      }
+    }
+  }
+
+  .form-item.form-type-select {
+    margin-bottom: 0;
+  }
+  .form-select {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,12 @@
+.marker {
+  display: inline-block;
+  color: $white;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 4px 5px;
+  background: green;
+  border-radius: 3px;
+  position: relative;
+  top: -2px;
+}

@@ -1,0 +1,27 @@
+/* Basic slidein from left animation
+ * Include with @include animation(animationname time swing, delay);
+ */
+
+//Fade in
+// @include keyframes(fadein) {
+//   0%    { opacity: 0.0; }
+//   100%  { opacity: 1.0; }
+// }
+
+//Side in from bottom
+// @include keyframes(slideup) {
+//   0% { opacity: 0.0; @include translateY(50px); }
+//   100% { opacity: 1.0; @include translateY(0); }
+// }
+
+//Slide in from top
+// @include keyframes(slidedown) {
+//   0% { opacity: 0.0; @include translateY(-30px); }
+//   100% { opacity: 1.0; @include translateY(0); }
+// }
+
+//Slide in from left
+// @include keyframes(slideinleft) {
+//   0% { opacity: 0.0; @include translateX(-100%); }
+//   100% { opacity: 1.0; @include translateX(0); }
+// }

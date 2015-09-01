@@ -1,0 +1,56 @@
+table {
+  width: 100%;
+  border: 1px solid $table-border;
+  margin-bottom: 20px;
+
+  th {
+    font-weight: normal;
+    color: $text;
+    background: $grey;
+    border-color: $table-border;
+  }
+
+  td {
+    border-color: $grey;
+  }
+
+  //Body & Head
+  tr {
+    th, td {
+      font-size: 15px;
+      padding: 10px 14px 6px;
+    }
+  }
+
+  //Head specific
+  thead {
+    tr th {
+      color: $white;
+      background: $table-border;
+      border-color: darken($table-border,20);
+    }
+  }
+
+  //Body specific
+  tbody {
+    tr {
+      &:nth-child(even) {
+      th {
+        background: $grey;
+      }
+      td {
+        background: $grey;
+      }
+    }
+
+    &:nth-child(odd) {
+      th {
+        background: $grey;
+      }
+      td {
+        background: $white;
+      }
+    }
+    }
+  }
+}

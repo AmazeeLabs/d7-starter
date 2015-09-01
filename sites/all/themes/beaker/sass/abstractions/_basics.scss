@@ -1,0 +1,16 @@
+// Set container height/width to 100%
+html, body, .site-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+// Override default Flexslider settings
+.flexslider {
+  border: 0 none;
+  box-shadow: none;
+}
+
+// Overrride default panels settings
+.panel-flexible .panels-flexible-row {
+  padding: 0;
+}

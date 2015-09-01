@@ -1,0 +1,99 @@
+// .ui-datepicker {
+//     padding: 0px;
+//
+//     &#ui-datepicker-div {
+//         width: 320px;
+//         background: $white;
+//         border: 1px solid $line;
+//     }
+//
+//     .ui-datepicker-header {
+//         background: transparent;
+//         border: none;
+//     }
+//
+//     td {
+//         padding: 6px;
+//     }
+//
+//     select.ui-datepicker-month,
+//     select.ui-datepicker-year
+//     {
+//       min-width: 0;
+//     }
+//
+//     .ui-state-default,
+//     .ui-widget-content .ui-state-default,
+//     .ui-widget-header .ui-state-default
+//     {
+//         text-align: center;
+//         background: none;
+//         border: none;
+//         &:hover {
+//             color: $blue;
+//             background: $header;
+//             @include border-radius(3px);
+//         }
+//     }
+//
+//     .ui-state-highlight,
+//     .ui-widget-content .ui-state-highlight,
+//     .ui-widget-header .ui-state-highlight
+//     {
+//       color: $text;
+//       background: $header;
+//       @include border-radius(3px);
+//     }
+//
+//     .ui-state-active
+//     {
+//         color: $white;
+//         background: $blue;
+//         @include border-radius(3px);
+//     }
+//
+//     .ui-datepicker-prev,
+//     .ui-datepicker-next
+//     {
+//         cursor: pointer;
+//         background: $for-blue;
+//         @include transition(background 0.3s ease);
+//         @include border-radius(3px);
+//
+//         &:hover {
+//             background: $for-blue-hover;
+//             border: none;
+//         }
+//         .ui-icon {
+//             background-repeat: no-repeat;
+//             background-position: 0px 0px;
+//             @include background-size(15px);
+//         }
+//     }
+//
+//     .ui-datepicker-prev {
+//         top: 6px;
+//         left: 4px;
+//
+//         .ui-icon {
+//             background-image: url(../images/button-arrow-left.png);
+//         }
+//     }
+//
+//     .ui-datepicker-next {
+//         top: 6px;
+//         right: 4px;
+//
+//         .ui-icon {
+//             background-image: url(../images/button-arrow-right.png);
+//         }
+//     }
+//
+//     .ui-datepicker-calendar {
+//         thead {
+//             tr {
+//                 background: $way;
+//             }
+//         }
+//     }
+// }

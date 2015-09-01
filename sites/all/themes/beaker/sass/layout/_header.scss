@@ -1,0 +1,49 @@
+
+// LOGO STYLES
+// =============================================================================
+
+#logo {
+  float: left;
+  display: block;
+  width: 200px;
+  height: 124px;
+  margin-top: 40px;
+  background: url(../logo.svg) no-repeat;
+  background-size: 100%;
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// SITE NAME & SLOGAN
+// =============================================================================
+
+#name-and-slogan {
+  @include clearfix;
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+//Site name
+#site-name {
+
+}
+
+//Site slogan
+#site-slogan {
+
+}
+
+// HEADER STYLES
+// =============================================================================
+
+header {
+
+}
