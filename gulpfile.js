@@ -198,7 +198,7 @@ gulp.task('test', function() {
 
 
 /* Gulp browserSync init task*/
-gulp.task('watch', ['sass','browser-sync'], function () {
+gulp.task('watch', ['browser-sync'], function () {
     gulp.watch(path.sass + '/**/*.scss', ['sass']);
     gulp.watch(path.js + '/**/*.js').on('change', reload);
     gulp.watch("*.html").on('change', reload);

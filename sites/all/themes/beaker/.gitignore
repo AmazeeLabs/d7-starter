@@ -10,6 +10,7 @@ libraries
 # Ignore .map files
 *.css.map
 css/map
+*.css
 
 # Ignore Mac files
 .DS_Store
