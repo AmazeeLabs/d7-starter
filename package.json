@@ -1,5 +1,5 @@
 {
-  "name": "standard-theme",
+  "name": "beaker-theme",
   "version": "1.0.0",
   "description": "Amazee Labs Standard Theme",
   "main": "gulpfile.js",
@@ -18,7 +18,8 @@
     "gulp-sass": ">=2.0.1",
     "gulp-sourcemaps": ">=1.5.2",
     "gulp-util": ">=3.0.5",
-    "jshint-stylish": ">=2.0.1"
+    "jshint-stylish": ">=2.0.1",
+    "stream-browserify": ">=2.0.0"
   },
   "scripts": {
     "postinstall": "find node_modules/ -name '*.info' -type f -delete; bower install --force",

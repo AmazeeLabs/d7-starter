@@ -1,5 +1,5 @@
 {
-  "name": "standard",
+  "name": "beaker-theme",
   "version": "1.0.0",
   "devDependencies": {
     "susy": ">=2.2.5",
