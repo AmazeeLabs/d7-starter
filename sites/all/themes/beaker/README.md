@@ -11,7 +11,7 @@ npm install
 ### Run gulp
 gulp watch
 
-### Changelog
+## Changelog
 
-#### Beaker v1.0.1
+### Beaker v1.0.1
 2015/09/11 BEAKER-22: Integrate Breakpoints for JS
