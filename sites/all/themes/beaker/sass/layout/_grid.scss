@@ -1,45 +1,7 @@
-
 // COMPASS MIXINS
 // =============================================================================
 @include border-box-sizing;
 
-// CONFIGURE SUSY 2 GLOBAL DEFAULTS
-// =============================================================================
-// $susy: (
-//   use-custom: (rem: true)
-// );
-
-$susy: (
-  columns: 15,
-  gutters: 20px/60px,
-  column-width: 60px,
-);
-
-
-// BREAKPOINT VARIABLES
-// =============================================================================
-
-$tablet-up: 768px;
-$desktop-up: 935px;
-$almost-wide: 1070px;
-$wide: 1180px;
-
-$small: max-width 480px;
-$mobile: max-width ($tablet-up - 1px);
-$tablet: max-width ($desktop-up - 1px);
-$desktop: max-width ($almost-wide - 1px);
-
-$mobile-only: $mobile;
-$tablet-only: ($tablet-up + 1px) ($desktop-up - 1px);
-
-// DEFINE BREAKPOINT SHORTCUT
-// =============================================================================
-
-@mixin b($var) {
-  @include breakpoint($var) {
-    @content;
-  }
-}
 
 // The Container Mixin
 // Note: Optional arguments are enclosed in ()
