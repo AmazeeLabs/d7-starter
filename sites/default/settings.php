@@ -31,7 +31,7 @@ if (getenv('AMAZEEIO_VARNISH_HOSTS') && getenv('AMAZEEIO_VARNISH_SECRET')) {
 
 ### AMAZEE.IO Redis settings
 if (getenv('AMAZEEIO_REDIS_HOST') && getenv('AMAZEEIO_REDIS_PORT')) {
-  $conf['redis_client_interface'] = 'Predis';
+  $conf['redis_client_interface'] = 'PhpRedis';
   $conf['redis_client_host'] = getenv('AMAZEEIO_REDIS_HOST');
   $conf['redis_client_port'] = getenv('AMAZEEIO_REDIS_PORT');
 }
