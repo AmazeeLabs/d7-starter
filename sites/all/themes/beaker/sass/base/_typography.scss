@@ -1,67 +1,99 @@
-
-// BASE FONT FAMILY AND COLOR
+// FONT INCLUDES
 // =============================================================================
-body {
-  @include font-regular;
+
+
+// FONT MIXINS
+// =============================================================================
+
+@mixin font-light {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+@mixin font-regular {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+@mixin font-semibold {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+@mixin font-bold {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+// BASE FONT
+// =============================================================================
+
+html {
+  @include font-light;
+  letter-spacing: 1px;
+
+  // Font size
+  @include font-size(18px,true);
+  @include breakpoint($mobile) {
+    font-size: 87.5%;
+    line-height: 1.5;
+  }
 }
 
 // HEADER STYLES
 // =============================================================================
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $black;
+}
+
 @mixin h1 {
-  font-size: 36px;
+  @include font-size(48,true);
+  @include font-light;
+  @extend h1;
 }
 
 @mixin h2 {
-  font-size: 28px;
+  @include font-size(34,true);
+  @include font-light;
+  @extend h2;
 }
 
 @mixin h3 {
-  font-size: 21px;
+  @include font-size(22,true);
+  @include font-regular;
+  @extend h3;
 }
 
 @mixin h4 {
-  font-size: 16px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  //reset font weight
-  @include font-semibold;
-  line-height: 1.2em;
+  @include font-size(18,true);
+  @include font-regular;
+  @extend h4;
+  margin: 0;
 }
 
 h1 {
   @include h1;
-  margin-bottom: 0.75em;
 }
 
 h2 {
   @include h2;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
 }
 
 h3 {
   @include h3;
-  margin-top: 1em;
-  margin-bottom: 0.75em;
 }
 
 h4 {
   @include h4;
-  margin-top: 0.5em;
-}
-
-h1 + h2 {
-  margin-top: 0;
-}
-
-main p {
-  margin-bottom: 10px;
 }
 
 // TEXT STYLES
 // =============================================================================
 b, em, strong {
-  //font-weight: bold;
   @include font-semibold;
 }
