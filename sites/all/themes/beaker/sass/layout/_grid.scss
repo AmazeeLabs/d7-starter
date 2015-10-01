@@ -1,11 +1,19 @@
-// COMPASS MIXINS
+
+// BORDER BOX
 // =============================================================================
 @include border-box-sizing;
 
-
-// The Container Mixin
-// Note: Optional arguments are enclosed in ()
+// CONFIGURE SUSY 2 GLOBAL DEFAULTS
 // =============================================================================
+// $susy: (
+//   use-custom: (rem: true)
+// );
+
+$susy: (
+  columns: 12,
+  gutters: 20px/60px,
+  column-width: 60px,
+);
 
 header .inner,
 main .inner,

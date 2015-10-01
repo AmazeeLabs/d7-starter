@@ -1,0 +1,11 @@
+@mixin icon($width: 21px, $height: 21px,$background:"") {
+  width: $width;
+  height: $height;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+  background-image: url($background);
+  background-position: 50%;
+}
