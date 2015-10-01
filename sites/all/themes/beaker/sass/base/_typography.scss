@@ -29,15 +29,12 @@
 // =============================================================================
 
 html {
-  @include font-light;
-  letter-spacing: 1px;
-
-  // Font size
+  @include font-regular;
   @include font-size(18px,true);
-  @include breakpoint($mobile) {
-    font-size: 87.5%;
-    line-height: 1.5;
-  }
+  // @include breakpoint($mobile) {
+  //   font-size: 87.5%;
+  //   line-height: 1.5;
+  // }
 }
 
 // HEADER STYLES
