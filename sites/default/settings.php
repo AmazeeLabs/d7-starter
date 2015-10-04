@@ -3,7 +3,7 @@
 /**
  * @file
  * AmazeeIO Drupal 7 configuration file.
- * 
+ *
  * You should not edit this file, please use environment specific files!
  * They are loaded in this order:
  * - settings.all.php
@@ -14,16 +14,16 @@
  *   For settings only for the development environment (dev servers, vagrant).
  * - settings.local.php
  *   For settings only for the local environment, this file will not be commited in GIT!
- * 
+ *
  */
 
 ### AMAZEE.IO Varnish & Reverse proxy settings
 if (getenv('AMAZEEIO_VARNISH_HOSTS') && getenv('AMAZEEIO_VARNISH_SECRET')) {
-  $varnish_hosts = explode(getenv('AMAZEEIO_VARNISH_HOSTS'), ',');
+  $varnish_hosts = explode(',', getenv('AMAZEEIO_VARNISH_HOSTS'));
   array_walk($varnish_hosts, function(&$value, $key) { $value .= ':6082'; });
-  
+
   $conf['reverse_proxy'] = TRUE;
-  $conf['reverse_proxy_addresses'] = explode(getenv('AMAZEEIO_VARNISH_HOSTS'), ',');
+  $conf['reverse_proxy_addresses'] = array_merge(explode(',', getenv('AMAZEEIO_VARNISH_HOSTS')), array('127.0.0.1'));
   $conf['varnish_control_terminal'] = implode($varnish_hosts, " ");
   $conf['varnish_control_key'] = getenv('AMAZEEIO_VARNISH_SECRET');
   $conf['varnish_version'] = 3;
@@ -49,6 +49,33 @@ if(getenv('AMAZEEIO_SITENAME')){
   );
 }
 
+### AMAZEE.IO SOLR connection
+if(getenv('AMAZEEIO_SOLR_HOST') && getenv('AMAZEEIO_SOLR_PORT')){
+  // Override search API server settings fetched from default configuration.
+  $conf['search_api_override_mode'] = 'load';
+  $conf['search_api_override_servers'] = array(
+    'solr' => array(
+      'name' => 'Amazee.io Solr - Environment:' . getenv('AMAZEEIO_SITE_ENVIRONMENT'),
+      'options' => array(
+        'host' => getenv('AMAZEEIO_SOLR_HOST'),
+        'port' => getenv('AMAZEEIO_SOLR_PORT'),
+        'path' => '/solr/'.getenv('AMAZEEIO_SITENAME').'/',
+        'http_user' => '',
+        'http_pass' => '',
+        'excerpt' => 0,
+        'retrieve_data' => 0,
+        'highlight_data' => 0,
+        'http_method' => 'POST',
+      ),
+    ),
+  );
+}
+
+### Base URL
+if (getenv('AMAZEEIO_SITE_URL')) {
+  $base_url = 'http://' . getenv('AMAZEEIO_SITE_URL');
+}
+
 // Let the ultimate_cron work as usual on the core-cron command ("drush cron").
 $conf['ultimate_cron_check_schedule_on_core_cron'] = TRUE;
 
@@ -69,13 +96,5 @@ if (file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';
 }
 
-// To improve the performance, we use READ-COMMITTED isolation by default. To
-// not do it, add
-// $conf['custom_disallow_read_committed_isolation'] = TRUE;
-// in the settings.local.php.
-// See https://www.drupal.org/node/1650930 for more info.
-if ($databases['default']['default']['driver'] == 'mysql' && empty($conf['custom_disallow_read_committed_isolation'])) {
-  $databases['default']['default']['init_commands']['isolation'] = 'SET SESSION tx_isolation="READ-COMMITTED"';
-}
-// We don't need this setting anymore.
-unset($conf['custom_disallow_read_committed_isolation']);
+// Uncomment to use Domains Module
+// include DRUPAL_ROOT . '/sites/all/modules/domain/settings.inc';
