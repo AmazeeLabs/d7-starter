@@ -14,20 +14,3 @@ $susy: (
   gutters: 20px/60px,
   column-width: 60px,
 );
-
-header .inner,
-main .inner,
-footer .inner,
-{
-  padding: 0 20px;
-  @include breakpoint($tablet-up) {
-    @include container;
-    padding: 0 40px;
-  }
-  @include breakpoint($wide) {
-    // Nothing set yet
-  }
-  @include breakpoint(0 ($desktop-up - 1px)) {
-    // Noting set yet
-  }
-}
