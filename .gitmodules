@@ -172,3 +172,6 @@
 [submodule "sites/all/modules/search_api_override"]
 	path = sites/all/modules/search_api_override
 	url = git://git.drupal.org/project/search_api_override.git
+[submodule "sites/all/modules/maxlength"]
+	path = sites/all/modules/maxlength
+	url = git://git.drupal.org/project/maxlength.git
