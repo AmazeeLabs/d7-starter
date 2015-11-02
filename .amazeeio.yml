@@ -1,0 +1,18 @@
+deploy_tasks:
+  development:
+    before_deploy: |
+      npm install
+      npm run gulp -- compile
+    after_deploy: |
+      drush cc css-js -y 2>&1
+      drush cr 2>&1
+  production:
+    before_deploy: |
+      npm install
+      npm run gulp -- build
+    after_deploy: |
+      drush updb 2>&1
+shared:
+  production:
+    - src: files
+      dst: sites/default/files
