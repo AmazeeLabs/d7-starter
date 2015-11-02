@@ -5,7 +5,7 @@ deploy_tasks:
       npm run gulp -- compile
     after_deploy: |
       drush cc css-js -y 2>&1
-      drush cr 2>&1
+      drush cc all 2>&1
   production:
     before_deploy: |
       npm install
