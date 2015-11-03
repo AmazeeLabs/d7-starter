@@ -96,28 +96,43 @@ gulp.task('sass', function () {
 });
 
 
-/* Gulp SASS build task*/
+/* Gulp SASS dev compile task*/
+gulp.task('sass-compile', function () {
+  var processors = [
+    autoprefixer({browsers: ['last 10 versions', 'ie 9']})
+  ];
+  gulp.src(path.sass + '/**/*.scss')
+    .pipe(sourcemaps.init())
+    .pipe(globbing({ extensions: ['.scss'] }))
+    .pipe(sass.sync().on('error', sass.logError).on('error', process.exit.bind(process, 1)))
+    .pipe(postcss(processors))
+    .pipe(sourcemaps.write('./map'))
+    .pipe(gulp.dest('./' + path.css))
+    .pipe(filter([path.css + '/**/*.css', '!' + path.css + '/animate.css']))
+    .pipe(browserSync.reload({stream: true}))
+    .pipe(filter([path.css + '/**/*.css', '!' + path.css + '/animate.css']))
+});
+
+
+/* Gulp SASS prod compile task*/
 gulp.task('sass-build', function () {
   var processors = [
     autoprefixer({browsers: ['last 10 versions', 'ie 9']}),
-    // mqpacker({
-    //   sort: true
-    // }),
     csswring
   ];
   gulp.src(path.sass + '/**/*.scss')
     .pipe(globbing({ extensions: ['.scss'] }))
-    .pipe(sass.sync().on('error', sass.logError))
+    .pipe(sass.sync().on('error', sass.logError).on('error', process.exit.bind(process, 1)))
     .pipe(postcss(processors))
     .pipe(gulp.dest('./' + path.css));
 });
 
 
 /* Gulp compile dev task*/
-gulp.task('compile', ['sass']);
+gulp.task('compile', ['sass-compile']);
 
 
-/* Gulp build task*/
+/* Gulp build prod task*/
 gulp.task('build', ['sass-build']);
 
 
