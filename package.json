@@ -23,6 +23,9 @@
     "jshint-stylish": ">=2.0.1",
     "stream-browserify": ">=2.0.1"
   },
+  "optionalDependencies": {
+    "fsevents": ">=1.0.5"
+  },
   "scripts": {
     "postinstall": "find node_modules/ -name '*.info' -type f -delete; bower install --force",
     "gulp": "gulp",
