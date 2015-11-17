@@ -18,6 +18,58 @@
     }
   };
 
+  /**
+  * Add versions/device types to body for responsiveness
+  * */
+  Drupal.behaviors.browserDetection = {
+    attach: function (context, settings) {
+      var $b = $('body');
+      //Check if desktop device
+      if( $.browser.desktop ) {
+        $b.addClass('desktop');
+      }
+
+      // Check if mobile device
+      if( $.browser.mobile ) {
+        $b.addClass('mobile');
+      }
+
+      // Check if IE
+      var ua = window.navigator.userAgent;
+      var msie = ua.indexOf("MSIE ");
+      if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
+       $b.addClass('ie');
+      }
+
+      //Check if IE9
+      if ($.browser.msie  && parseInt($.browser.version) == 9) {
+        $b.addClass('ie9');
+      }
+
+      //Check if iOS device
+      if( $.browser.ipad || $.browser.iphone || $.browser.ipod ) {
+        $b.addClass('ios');
+        if ( $.browser.ipad ) {
+          $b.addClass('ipad');
+        } else if ( $.browser.iphone ) {
+          $b.addClass('iphone');
+        } else if ( $.browser.ipod ) {
+          $b.addClass('ipod');
+        }
+      }
+
+      //Check if Android device
+      if( $.browser.android || $.browser.kindle ) {
+        $b.addClass('android');
+      }
+
+      //Check if Windows phone
+      if( $.browser["windows phone"] ) {
+        $b.addClass('windows-mobile');
+      }
+    }
+  };
+
   // Toggle Hamburger Menu on mobile
   // Drupal.behaviors.searchToggleOnMobile = {
   //   attach: function(context, settings) {

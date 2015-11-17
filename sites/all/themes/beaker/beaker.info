@@ -16,6 +16,7 @@ stylesheets[all][] = css/animate.css
 ; ========================================
 scripts[] = js/breakpoints.js
 scripts[] = js/behaviors.js
+scripts[] = js/jquery.browser.min.js
 
 ; ========================================
 ; Regions
