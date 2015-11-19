@@ -8,3 +8,5 @@
 
 // Error messages to display: All messages
 $conf['error_level'] = 2;
+// Google Analytics.
+$conf['googleanalytics_account'] = 'UA-XXXXXXXX-Y';
