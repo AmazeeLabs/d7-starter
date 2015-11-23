@@ -20,11 +20,11 @@
     "gulp-sass": "==2.0.4",
     "gulp-sourcemaps": ">=1.6.0",
     "gulp-util": ">=3.0.6",
-    "jshint-stylish": ">=2.0.1",
-    "stream-browserify": ">=2.0.1",
-    "gulp-imagemin": "^2.4.0",
     "imagemin-pngquant": "^4.2.0",
-    "imagemin-svgo": "^4.1.2"
+    "imagemin-svgo": "^4.1.2",
+    "jshint": "^2.8.0",
+    "jshint-stylish": ">=2.0.1",
+    "stream-browserify": "^2.0.1"
   },
   "optionalDependencies": {
     "fsevents": ">=1.0.5"
