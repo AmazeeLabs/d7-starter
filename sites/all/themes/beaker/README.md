@@ -5,8 +5,11 @@ Beaker is the new Amazee Labs Standard Theme
 Beaker is using Gulp. We use gulp to compile SASS and run Browersync.
 to run gulp do the following steps:
 
-###Install npm
+###Install npm (this is run from the root of the site)
 npm install
+
+###Install Bower /libraries
+bower install
 
 ### Run gulp
 gulp watch
