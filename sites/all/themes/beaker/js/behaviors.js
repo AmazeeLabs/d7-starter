@@ -1,19 +1,19 @@
 (function ($) {
-  // Drupal.theme.prototype.standardExampleButton = function (path, title) {
-  //   // Create an anchor element with jQuery.
-  //   return $('<a href="' + path + '" title="' + title + '">' + title + '</a>');
-  // };
-
-  // Get CSS Breakpoints
+  /**
+  * Get CSS Breakpoints
+  * Usage: window.breakpoint gives you the actual breakpoint
+  * E.g.: if(window.breakpoint == 'mobile') { Your Code }
+  */
   Drupal.behaviors.getBreakpointsFromCSS = {
     attach: function(context, settings) {
-      var breakpoint = {};
-      breakpoint.refreshValue = function () {
-        this.value = window.getComputedStyle(document.querySelector('html'), ':before').getPropertyValue('content').replace(/\"/g, '');
+      var breakpoint;
+      var breakpoint_refreshValue;
+      breakpoint_refreshValue = function () {
+        window.breakpoint = window.getComputedStyle(document.querySelector('html'), ':before').getPropertyValue('content').replace(/\"/g, '');
       };
 
       $(window).resize(function () {
-        breakpoint.refreshValue();
+        breakpoint_refreshValue();
       }).resize();
     }
   };
