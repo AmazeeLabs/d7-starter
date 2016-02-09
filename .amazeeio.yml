@@ -11,6 +11,14 @@ deploy_tasks:
       npm run gulp -- build 2>&1
     after_deploy: |
       drush updb -y 2>&1
+      
+branch_deploy_tasks:
+  dropguard:
+    before_deploy: |
+      drush sql-drop -y 2>&1
+      drush sql-sync @prod default -y 2>&1
+      drush rsync @prod:%files default:%files -y 2>&1
+
 shared:
   production:
     - src: files
