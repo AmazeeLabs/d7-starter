@@ -2,7 +2,7 @@
 
 $sitename = 'd7-starter_io';   //use the username on our servers like testsite_ch
 $options['newrelic-api-key'] = 'new-site_com';
-$options['deploy-repository'] = 'git@github.com:AmazeeLabs/d7-starter.com.git';
+$options['deploy-repository'] = 'git@github.com:AmazeeLabs/d7-starter.git';
 
 // - And we load the aliases file here
 global $aliases_stub;
