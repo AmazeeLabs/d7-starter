@@ -9,6 +9,7 @@ deploy_tasks:
     before_deploy: |
       npm install 2>&1
       npm run gulp -- build 2>&1
+      rm -rf node_modules 2>&1
     after_deploy: |
       drush updb -y 2>&1
 
