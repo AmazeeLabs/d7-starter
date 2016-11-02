@@ -10,3 +10,5 @@
 $conf['error_level'] = 2;
 // Google Analytics.
 $conf['googleanalytics_account'] = 'UA-XXXXXXXX-Y';
+//Theme Debug
+// $conf['theme_debug'] = TRUE;
