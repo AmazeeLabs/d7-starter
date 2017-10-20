@@ -1,12 +1,15 @@
 <?php
-
-$sitename = 'd7-starter_io';   //use the username on our servers like testsite_ch
-$options['newrelic-api-key'] = 'new-site_com';
-$options['deploy-repository'] = 'git@github.com:AmazeeLabs/d7-starter.git';
-
-// - And we load the aliases file here
+// Don't change anything here, it's magic!
 global $aliases_stub;
 if (empty($aliases_stub)) {
-  $aliases_stub = file_get_contents('https://raw.githubusercontent.com/AmazeeLabs/devops/master/drush-deployment/aliases.drushrc.php.stub?' . rand(0, 99999999999));
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_AUTOREFERER, TRUE);
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_URL, 'https://drush-alias.amazeeio.cloud/aliases.drushrc.php.stub');
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+    $aliases_stub = curl_exec($ch);
+    curl_close($ch);
 }
 eval($aliases_stub);
+
