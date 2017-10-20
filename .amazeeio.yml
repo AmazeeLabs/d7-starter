@@ -1,21 +1,21 @@
+sitegroup: d7-starter
 deploy_tasks:
   development:
     before_deploy:
-      - npm install
-      - npm run gulp -- compile
+      - yarn install
+      - yarn run gulp -- compile
     after_deploy:
-      - drush -y updb --cache-clear=0
       - drush -y cc css-js
   production:
     before_deploy:
-      - npm install
-      - npm run gulp -- build
+      - yarn install
+      - yarn run gulp -- build
       - rm -rf node_modules
     after_deploy:
       - drush -y updb --cache-clear=0
-      - drush -y cc css-js
-
+      - drush -y cc all
 shared:
   production:
     - src: files
       dst: sites/default/files
+
