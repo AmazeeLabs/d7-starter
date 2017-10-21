@@ -16,8 +16,6 @@
       // Refresh breakpoint var on resize
       $(window).resize(function () {
         breakpoint.refreshValue();
-
-        console.log(breakpoint.value);
       }).resize();
     }
   };

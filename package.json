@@ -1,6 +1,6 @@
 {
   "name": "beaker-theme",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Amazee Labs Standard Theme",
   "main": "gulpfile.js",
   "devDependencies": {
@@ -31,9 +31,7 @@
     "fsevents": ">=1.0.5"
   },
   "scripts": {
-    "postinstall": "find node_modules/ -name '*.info' -type f -delete; bower install --force",
-    "gulp": "gulp",
-    "bower": "bower"
+    "gulp": "gulp"
   },
   "repository": {
     "type": "git",
