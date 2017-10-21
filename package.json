@@ -5,12 +5,11 @@
   "main": "gulpfile.js",
   "devDependencies": {
     "autoprefixer": ">=6.0.0",
-    "bower": ">=1.6.5",
-    "browser-sync": ">=2.9.11",
+    "browser-sync": ">=2.18.13",
     "colors": ">=1.1.2",
     "css-mqpacker": ">=4.0.0",
     "csswring": ">=4.0.0",
-    "gulp": ">=3.9.0",
+    "gulp": ">=3.9.1",
     "gulp-css-globbing": ">=0.1.8",
     "gulp-duration": "0.0.0",
     "gulp-filter": ">=3.0.1",
@@ -22,6 +21,7 @@
     "gulp-util": ">=3.0.6",
     "imagemin-pngquant": "^4.2.0",
     "imagemin-svgo": "^4.1.2",
+    "js-yaml": "^3.10.0",
     "jshint": "^2.8.0",
     "jshint-stylish": ">=2.0.1",
     "pngquant-bin": "^3.0.0",
@@ -42,5 +42,10 @@
   "bugs": {
     "url": "https://github.com/AmazeeLabs/d8-starter/issues"
   },
-  "homepage": "https://github.com/AmazeeLabs/d8-starter"
+  "homepage": "https://github.com/AmazeeLabs/d8-starter",
+  "dependencies": {
+    "animate-scss": "~3.2.1",
+    "breakpoint-sass": "~2.7.1",
+    "susy": "~2.2.5"
+  }
 }

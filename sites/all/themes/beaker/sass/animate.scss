@@ -4,6 +4,9 @@
 $enable-animate-css           : false;
 
 
+//Import animate css
+@import "../../../../../node_modules/animate-scss/animate.scss";
+
 /**
 * Animate.css config
 */
@@ -117,7 +120,4 @@ $enable-animate-css           : false;
   $enable-zoom-out-left         : false !default;
   $enable-zoom-out-right        : false !default;
   $enable-zoom-out-up           : false !default;
-
-  //Import animate css
-  @import "libraries/animate-scss/src/_animate.scss";
 }

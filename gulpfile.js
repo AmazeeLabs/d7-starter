@@ -34,7 +34,8 @@ var gulp          = require('gulp'),
     colors        = require('colors'),
     jshint        = require('gulp-jshint'),
     fs            = require('fs'),
-    duration      = require('gulp-duration');
+    duration      = require('gulp-duration'),
+    yaml          = require('js-yaml');
 
 
 /* Set paths */
@@ -44,11 +45,11 @@ path.js     = path.theme + path.js;
 path.img    = path.theme + path.img;
 path.tpl    = path.theme + path.tpl;
 
-
-if( fs.existsSync('./domain.json') ) {
-    var domain        = require('./domain.json');
+if ( fs.existsSync('./docker-compose.yml') ) {
+  var get_hostname     = yaml.safeLoad(fs.readFileSync('./docker-compose.yml', 'utf8'));
+  var domain           = get_hostname['services']['drupal']['hostname'];
 } else {
-    var domain        = process.env.AMAZEEIO_SITE_URL;
+  var domain           = process.env.AMAZEEIO_SITE_URL;
 }
 
 
